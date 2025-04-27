@@ -1,4 +1,5 @@
 package model;
+
 import java.time.LocalDate;
 import java.time.temporal.ChronoUnit;
 
@@ -17,7 +18,7 @@ public class Emprestimo {
     }
 
     public int diasAtraso(){
-        if(dataDevolucao == null) return 0;
+        if(dataDevolucao == null || !dataDevolucao.isAfter(dataPrevista)) return 0;
         return (int) ChronoUnit.DAYS.between(dataPrevista, dataDevolucao);
     }
 
@@ -56,5 +57,4 @@ public class Emprestimo {
     public String toString() {
         return "Emprestimo [livro=" + livro + ", usuario=" + usuario + ", dataEmprestimo=" + dataEmprestimo + ", dataPrevista=" + dataPrevista + ", dataDevolucao=" + dataDevolucao + "]\n";
     }
-
 }
