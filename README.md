@@ -132,6 +132,17 @@ Servindo também como um sistema-base para evoluções futuras, como interface g
 
 ---
 
+## 👥 Autores
+Projeto acadêmico desenvolvido por:
+
+- Leon Trigo
+- Lucas Kumegawa de Godoi
+- Thauana Vitória Ferreira Farias
+- Vitor Gonçalves
+
+---
+
+
 ## 📄 Licença
 
 Projeto desenvolvido apenas para fins acadêmicos, não destinado a uso comercial.
